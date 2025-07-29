@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Restaurant</title>
+    <link rel="icon" href="imagenexamen/logo eden.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/restaurante.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+<body>
+  
+<!--Barra de Navegación-->
+<nav class="navbar navbar-expand-lg barranavegacion" id="regresar">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-start justify-content-between me-5" id="navbarTogglerDemo01">
+      <div class="navbar-nav ms-2 justify-content-center align-items-center">
+      <a class="navbar-brand" href=""><img src="imagenexamen/logo eden.png" alt="Logo" class="rounded" style="width: 12%;"></a>
+      </div>
+      <ul class="navbar-nav  d-flex align-items-center listaenlaces">
+        <li class="nav-item">
+          <a class="nav-link active a" aria-current="page" href="#inicio"> <p>Inicio</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active a" href="#nuestromenu"><p>Acerca de Menú</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active a" href="#eventos"><p>Eventos</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active a" href="#chefs"><p>Chefs</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active a" href="#galeria"><p>Galeria</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active a" href="#contactanos"><p>Contactanos</p></a>
+        </li>
+      </ul>
+        <div class="navbar-nav d-flex align-items-center">
+          <a class="botones" href="#reserva">Reserva</a>
+          </div>   
+     </div>
+  </div>
+</nav>
+    
+<!--Hero-->
+
+  <section class="container-fluid d-flex flex-column justify-content-center align-items-center hero" id="inicio">
+    <article class="row">    
+        <div class="col w-50 d-flex align-items-center p-5">
+            <div class="d-flex flex-column justify-content-center align-items-center text-left w-100 ">
+               <h1 class="fs-1 fw-bold"> Un paraíso de sabores que seducen los sentidos</h1>
+               <p class="fs-5">Déjate envolver por una experiencia culinaria única, donde cada plato despierta los 
+                sentidos con su sabor, aroma y presentación impecable.</p>
+                <div class="d-flex justify-content-evenly align-items-center text-right w-100">
+               <a class="botones" href="#reserva">Haz tu reservación</a>
+               <a class="botones" href="#nuestromenu">Visita nuestro menú</a>
+              
+            </div>
+            </div>
+          
+        </div>     
+
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 ">
+            <img src="imagenexamen/Frente del Restaurante.jpeg" class="rounded-circle img-fluid mb-2 frenterestaurante" alt="">
+        </div>
+
+
+    </article>
+  </section>
+<!--Quienes somos-->
+<section class="p-5">
+ <h2 class="text-center fw-bold m-5 mx-auto" style="max-width: 600px">Conozca sobre nosotros</h2>
+ <div class="d-flex flex-column flex-md-row quienessomos">
+ <article class="w-100 somos ratio ratio-16x9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/i_7FA40Dnb0?si=4CFJMc6603ZBbgYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </article>
+  <article class=" d-flex flex-column align-items-center p-3 w-100 somos">
+    <p>Edén nació hace dos décadas como un santuario culinario inspirado en el Jardín mítico, ofreciendo no solo comida, 
+      sino una experiencia sensorial elevada. En 2009, presentó su menú de siete tiempos Sabores del Paraíso, combinando
+       técnicas ancestrales y productos locales. Para 2015, fue reconocido entre los diez destinos gastronómicos más destacados 
+       de Latinoamérica. Y en 2021, creó el Jardín de los Sabores, un espacio donde los comensales recolectan hierbas frescas antes 
+       de degustar el plato final. Con un ambiente sofisticado, su carta celebra la diversidad: pastas artesanales, carnes selectas,
+       mariscos frescos, opciones veganas innovadoras y postres que rozan la escultura. Cada detalle honra el arte del sabor y convierte
+      a Edén en un refugio donde el paladar encuentra su paraíso.</p>
+  </article>
+  </div>
+  <!--Contactar whatsapp-->
+<article class="WhatsApp container mt-4 d-flex flex-column flex-md-row d-flex justify-content-evenly align-items-center p-3  contac">
+<div><p class="fs-4 mx-auto" style="max-width: 600px">Reserva con nosotros</p></div>  
+<div><a class="botones" href="https://wa.me/50688289750" target="_blank" class="boton m-2">WhatsApp</a></div>
+</article>
+</section>
+
+<!--Cards-->
+<section class="container-fluid p-5 mt-4 fondocards">
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card h-100 d-flex align-items-center sombrecard p-1 mb-5 rounded bordeelegir ">
+      <div class="card-body ">
+        <p class="fs-2 fw-bold elegirnos mx-auto" style="max-width: 600px">Porque Elegirnos</p>
+        <p class="fs-5 elegirnos mx-auto" style="max-width: 600px">Sumérgete en una experiencia gastronómica donde la elegancia se encuentra con la excelencia.
+       Eden no es solo un restaurante: es un refugio de sabores, ambiente y atención al detalle. Aquí cada visita se
+        transforma en un momento inolvidable</p>
+      </div>
+    </div>
+  </div>
+<div class="col">
+    <div class="card h-100 sombrecard p-1 mb-5 rounded bordes">
+      <img src="imagenexamen/22994.jpg"  class="rounded-circle img-fluid mb-3 p-5" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="fs-4 fw-bold mx-auto" style="max-width: 600px">Gastronomía de autor</p>
+        <p>Nuestros chefs fusionan técnicas internacionales con ingredientes locales de calidad, creando platos que despiertan los sentidos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 sombrecard p-1 mb-5 rounded bordes">
+      <img src="imagenexamen/sofisticado.jpeg" class=" rounded-circle img-fluid mb-3 p-5" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="fs-4 fw-bold mx-auto" style="max-width: 600px">Ambiente sofisticado</p>
+        <p>Desde la decoración hasta la música, Eden ofrece un entorno íntimo y refinado, 
+        perfecto tanto para una cena romántica como para una celebración especial.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 sombrecard p-1 mb-5 rounded bordes">
+      <img src="imagenexamen/empleados.jpg" class=" rounded-circle img-fluid mb-3 p-5" class="titulotarjeta card-img-top" alt="...">
+      <div class="card-body">
+        <p class="fs-4 fw-bold mx-auto" style="max-width: 600px">Servicio excepcional</p>
+        <p> Nuestro equipo se distingue por su calidez y profesionalismo, asegurándose de que cada detalle esté pensado para tu comodidad.</p>
+      </div>
+     </div>
+  </div>
+</div>
+</section>
+
+
+
+ <!--Menu taps-->
+ <div class="container p-5 mt-5">
+ <p class="fs-2 fw-bold text-center mt-5" id="nuestromenu" >Nuestro Menú</p>
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-vegana-tab" data-bs-toggle="tab" data-bs-target="#nav-vegana" type="button" role="tab" aria-controls="nav-vegana" aria-selected="true"><p>Comida Vegana</p></button>
+    <button class="nav-link" id="nav-carnes-tab" data-bs-toggle="tab" data-bs-target="#nav-carnes" type="button" role="tab" aria-controls="nav-carnes" aria-selected="false"><p>Carnes</p></button>
+    <button class="nav-link" id="nav-mariscos-tab" data-bs-toggle="tab" data-bs-target="#nav-mariscos" type="button" role="tab" aria-controls="nav-mariscos" aria-selected="false"><p>Mariscos</p></button>
+    <button class="nav-link" id="nav-pastas-tab" data-bs-toggle="tab" data-bs-target="#nav-pastas" type="button" role="tab" aria-controls="nav-pastas" aria-selected="false"><p> Pastas</p></button>
+    <button class="nav-link" id="nav-postres-tab" data-bs-toggle="tab" data-bs-target="#nav-postres" type="button" role="tab" aria-controls="nav-postres" aria-selected="false"><p> Postres</p></button>
+    <button class="nav-link" id="nav-bebeidas-tab" data-bs-toggle="tab" data-bs-target="#nav-bebidas" type="button" role="tab" aria-controls="nav-bebidas" aria-selected="false"><p>Bebidas</p></button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-vegana" role="tabpanel" aria-labelledby="nav-vegana-tab" tabindex="0">
+<div class="d-flex flex-wrap gap-3">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/risoto-funghi.jpg" class="img-fluid bg-danger h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ">
+        <h4 class="card-title fw-bold">Risotto de Trufa Negra y Espárragos</h4>
+        <p class="card-text">Arroz cremoso al caldo vegetal, realzado con trufa negra, espárragos salteados y un delicado acabado 
+          de almendras tostadas y ralladura de limón. Una sinfonía de aromas y equilibrio que invita al deleite..</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0 h-100">
+    <div class="col-md-4 ">
+      <img src="imagenexamen/carpaccio.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Carpaccio de Tomate Heirloom con Pesto de Albahaca y Piñones</h4>
+        <p class="card-text">Láminas de tomate heirloom sobre pesto vegano, con microgreens y sal marina 
+          ahumada. Ligero, vibrante y lleno de esencia mediterránea.</p> 
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <div class="tab-pane fade" id="nav-carnes" role="tabpanel" aria-labelledby="nav-carnes-tab" tabindex="0">
+    <div class="d-flex flex-wrap gap-3">
+    <div class="card mb-3 " style="max-width: 540px;">
+  <div class="row g-0 h-100">
+    <div class="col-md-4">
+      <img src="imagenexamen/filet de res.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Filete de res en reducción de vino tinto</h4>
+        <p class="card-text">Corte tierno de lomo de res, sellado a la perfección, sobre puré trufado de papas. 
+          Coronado con microgreens y bañado en una reducción de vino tinto para una experiencia envolvente y elegante.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/costilla de cordero.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Costillar de cordero con costra de hierbas</h4>
+        <p class="card-text">Cordero asado al punto, cubierto por una costra aromática de finas hierbas, acompañado de
+           ratatouille de temporada y un toque de salsa de menta. Distinguido, colorido y armonioso en cada bocado.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <div class="tab-pane fade" id="nav-mariscos" role="tabpanel" aria-labelledby="nav-mariscos-tab" tabindex="0">
+    <div class="d-flex flex-wrap gap-3">
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/camarones al ajillo.png" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Camarones al ajillo con perfume de limón y perejil</h4>
+        <p class="card-text">Camarones salteados en aceite de oliva virgen extra, infusionados con ajo dorado y ralladura 
+          de limón. Servidos sobre espejo de salsa ligera y decorados con hojas frescas de perejil. Un clásico elevado con 
+          sutileza y carácter.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/salmon.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Filete de salmón sobre crema de hinojo y vino blanco</h4>
+        <p class="card-text">Salmón al horno con costra ligera de hierbas, reposado sobre crema de hinojo y vino blanco.
+           Acompañado de espárragos tiernos y brotes verdes. Un plato delicado, armonioso y visualmente impecable</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <div class="tab-pane fade" id="nav-pastas" role="tabpanel" aria-labelledby="nav-pastas-tab" tabindex="0">
+  <div class="d-flex flex-wrap gap-3">
+    <div class="card mb-3 " style="max-width: 540px;">
+  <div class="row g-0 h-100">
+    <div class="col-md-4 ">
+      <img src="imagenexamen/pasta.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Tagliatelle al tartufo con mantequilla avellanada</h4>
+        <p class="card-text">Pasta fresca de huevo, cocida al punto perfecto y bañada en mantequilla avellanada. 
+          Se aromatiza con finas láminas de trufa negra y se termina con un toque de parmesano curado. 
+          Un plato de elegancia sobria y sabor profundo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/ravioles.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Ravioles rellenos de ricotta y espinaca sobre crema de nuez moscada</h4>
+        <p class="card-text">Ravioles artesanales rellenos con ricotta cremosa y espinaca baby, servidos sobre una 
+          delicada crema de nuez moscada y vino blanco. Decorados con brotes tiernos y aceite de albahaca. Refinado,
+           equilibrado y visualmente impecable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <div class="tab-pane fade" id="nav-postres" role="tabpanel" aria-labelledby="nav-postres-tab" tabindex="0">
+   <div class="d-flex flex-wrap gap-3">
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/chocolate.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Mousse de chocolate negro con corazón de frambuesa</h4>
+        <p class="card-text">Textura sedosa y profunda, con un centro de frambuesa fresca que aporta contraste y frescura.
+          Servido en copa alta con hojas de menta y virutas de cacao</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/La tarta de limón cu.jpg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Tarta de limón con merengue flameado</h4>
+        <p class="card-text">Base crujiente de masa sablé, crema cítrica suave y merengue italiano dorado al soplete. 
+          Un equilibrio perfecto entre acidez, dulzura y sofisticación visual</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+  </div>
+
+  <div class="tab-pane fade" id="nav-bebidas" role="tabpanel" aria-labelledby="nav-bebidas-tab" tabindex="0">
+    <div class="d-flex flex-wrap gap-3">
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/kir.jpeg" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Kir Royale</h4>
+        <p class="card-text">Un clásico francés que combina crème de cassis con champagne frío. Su color rubí y
+           burbujeo delicado lo convierten en el brindis ideal para ocasiones especiales.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="imagenexamen/limonada martini.png" class="img-fluid h-100 rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title fw-bold">Limoncello Martini</h4>
+        <p class="card-text">Fusión italiana de limoncello, vodka y jugo de limón fresco.
+          Servido en copa de cóctel, su sabor cítrico y suave lo hace refrescante y distinguido.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container p-5 mt-5">
+<p class="fs-2 fw-bold text-center mt-5">Especialidad del Chef</p>
+<div class="row row-cols-1 row-cols-md-2  g-4">
+  <div class="col">
+    <div class="card h-100 d-flex flex-column ">
+      <img src="imagenexamen/fuego silente como objeto inteligente-1.png" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h4 class="card-title fw-bold text-center">"Fuego Silente" <br> Wagyu sellado con ceniza de puerro y emulsión de miso ahumado</h4>
+        <p class="card-text">Corte de wagyu A5 sellado al carbón, servido sobre ceniza de puerro caramelizado y acompañado de una 
+          emulsión tibia de miso ahumado. Un plato que habla en susurros de intensidad y equilibrio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 d-flex flex-column ">
+      <img src="imagenexamen/Vieira con crema de coliflor trufada de Bruno Oteiza como objeto inteligente-1.png" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h4 class="card-title fw-bold text-center">"Suspiro del Mar" <br> Vieira confitada sobre crema de coliflor trufada y aire de sake</h4>
+        <p class="card-text">Vieira confitada lentamente en mantequilla clarificada, reposada sobre crema de coliflor con trufa blanca 
+          y coronada con aire de sake. Ligero, etéreo y profundamente elegante.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!--QUE DICEN DE NOSOTROS-->
+<section class="container-fluid quedicen p-5 mt-5 mb-5">
+<p class="fs-2 fw-bold text-center">Que dicen de nosotros</p>
+<div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+  <div class="col">
+    <div class="card h-100 bordequedicen">
+      <img src="imagenexamen/Isabel Rijas.png" class="card-img-top rounded-circle img-fluid mb-3 p-5" alt="...">
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold usuario">Isabel Rojas - <i>Ejecutiva de turismo</i></p>
+        <p class="card-text">“Una joya escondida en Guanacaste. La atmósfera, los sabores y 
+          la atención hacen que cada comida se sienta como una celebración. ¡Impecable!”</p>
+           <p class="card-text">Puntuación: ★★★★★★</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 bordequedicen">
+      <img src="imagenexamen/Giovanni Méndez.png" class="card-img-top rounded-circle img-fluid mb-3 p-5" alt="...">
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold usuario"> Giovanni Méndez - <i>Chef profesional</i> </p>
+        <p class="card-text">“La presentación es exquisita y el menú es realmente creativo. 
+          Quizás me faltó un toque más audaz en los postres, pero volvería sin pensarlo.”</p>
+            <p class="card-text">Puntuación: ★★★★☆☆</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 bordequedicen">
+      <img src="imagenexamen/Camila Vargas.jpg" class="card-img-top rounded-circle img-fluid mb-3 p-5" alt="...">
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold usuario"> Camila Vargas - <i>Estudiante de gastronomía</i></p>
+        <p class="card-text">“Inspirador. Me hizo tomar notas en plena cena. Eden eleva lo que significa comer bien.
+           El ceviche fue arte en un plato.</p>
+           <p class="card-text">Puntuación: ★★★★★★</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 bordequedicen">
+      <img src="imagenexamen/Elena Mora.png" class="card-img-top rounded-circle img-fluid mb-3 p-5" alt="...">
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold usuario">Elena Mora - <i>Jubilada amante del buen comer</i></p>
+        <p class="card-text">“La comida fue deliciosa y el ambiente muy cálido. Aunque el volumen de la
+           música estaba un poquito alto para mi gusto.”</p>
+        <p class="card-text">Puntuación: ★★★★☆☆</p>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100 bordequedicen">
+      <img src="imagenexamen/Sebastian Reyes.png" class="card-img-top rounded-circle img-fluid mb-3 p-5" alt="...">
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold usuario">Sebastián Reyes - <i>Viajero frecuente</i></p>
+        <p class="card-text">“He comido en restaurantes en París y Nueva York, pero Eden tiene un encanto íntimo que 
+          no se puede comparar. Elegancia sin pretensión.”</p>
+        <p class="card-text">Puntuación: ★★★★★★</p>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100 bordequedicen">
+      <img src="imagenexamen/Hector Castillo.png" class="card-img-top rounded-circle img-fluid mb-3 p-5" alt="...">
+      <div class="card-body">
+        <p class="card-title fs-4 fw-bold usuario">Héctor Castillo - <i>Padre de familia</i></p>
+        <p class="card-text">“¡Mis hijos amaron los platillos! Y mi esposa ya quiere reservar para nuestro aniversario. 
+          Perfecto para ocasiones especiales.”</p>
+        <p class="card-text">Puntuación: ★★★★★★</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--Galeria-->
+<section class="container-fluid mt-5 p-5 galeria">
+  <p class="fs-2 fw-bold text-center py-5 elegirnos" id="galeria">Galeria</p>
+  <article class="container">
+  <div class="row">  
+   <div class="col-12 col-md-6 mb-3"><img src="imagenexamen/saludable.jpg" class="card-img-top img-fluid"alt="comida saludable" data-bs-toggle="modal" data-bs-target="#salu">
+    <!--Modal-->    
+    <div class="modal fade" id="salu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content colormodal">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body">
+          <img src="imagenexamen/saludable.jpg" width="100%" alt="">
+       </div>
+     </div>
+  </div>
+</div>
+  </div>
+    <div class="col-12 col-md-6 mb-3"><img src="imagenexamen/mariscosgaleria.png"class="card-img-top img-fluid" alt="plato mariscos" data-bs-toggle="modal" data-bs-target="#mari"> 
+      <!--Modal-->    
+    <div class="modal fade" id="mari" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content colormodal">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body">
+          <img src="imagenexamen/mariscosgaleria.png" width="100%" alt="">
+       </div>
+     </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 mb-3"> <img src="imagenexamen/parrilla.jpg"class="card-img-top img-fluid" alt="carne a la parrilla" data-bs-toggle="modal" data-bs-target="#parri">
+          <!--Modal-->    
+     <div class="modal fade" id="parri" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content colormodal">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body">
+          <img src="imagenexamen/parrilla.jpg" width="100%" alt="">
+       </div>
+     </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 mb-3"> <img src="imagenexamen/pastagaleria.png" class="card-img-top img-fluid"alt="pasta" data-bs-toggle="modal" data-bs-target="#past">
+          <!--Modal-->    
+    <div class="modal fade" id="past" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content colormodal">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body">
+          <img src="imagenexamen/pastagaleria.png" width="100%" alt="">
+       </div>
+     </div>
+  </div>
+</div>
+    </div>
+  </article>
+  </div>
+</section>
+
+
+
+<!--Nuestros chef-->
+<section class="container-fluid p-5">
+  <p class="fs-2 fw-bold text-center p-3" id="chefs">Nuestros Chefs Profesionales</p>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenexamen/Lucien Dullan.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title fw-bold text-center">Lucien Duvall <br> El alquimista del sabor</h4>
+        <p class="card-text">Con raíces en Provenza y formación en París, Lucien transforma 
+          ingredientes simples en experiencias multisensoriales. Su cocina se basa en la técnica 
+          clásica francesa pero con giros inesperados que rinden homenaje a la naturaleza. Un 
+          perfume de lavanda, una reducción de higos… cada plato cuenta una historia.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenexamen/Camila Solano.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title fw-bold text-center">Camila Solano <br>La sinfonía del fuego latino</h4>
+        <p class="card-text">Camila entrelaza sus raíces costarricenses con la alta cocina 
+          de autor. Su dominio del fuego y las brasas le permiten crear sabores audaces y 
+          delicadamente balanceados. Su restaurante, ubicado entre cafetales, es un templo 
+          culinario donde la tierra se funde con la innovación.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenexamen/Emilio Takeda.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title fw-bold text-center">Emilio Takeda <br> La poesía del silencio japonés</h4>
+        <p class="card-text">De espíritu minimalista, Emilio estudió bajo maestros de Kioto y 
+          lleva la filosofía del “menos es más” a cada plato. Su presentación delicada, uso de
+           ingredientes de temporada y respeto por la estética convierten la comida en una ceremonia.
+            Comer con él es casi un acto meditativo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--Reservar-->
+<section class="container-fluid reservacion p-5">
+    <article class="row">
+      <div class="col-md-5">
+      <img src="imagenexamen/reservar mesa1.jpg" width="100%" alt="">
+     </div>
+      <div class="col-md-7" >
+        <p class="fs-2 fw-bold" id="chefs">Reserva tu Mesa</p>
+        <p>Un ambiente íntimo, una cocina que celebra los sentidos, y el arte de la buena mesa... 
+        Reserve hoy y permita que cada instante se convierta en una experiencia inolvidable.</p>
+        <p class="fs-5 fw-bold">Horario de atención:</p>
+        <ul>
+          <li>Lunes a Viernes: 12:00 m.d. 10:00 p.m.</li>
+          <li>Sábados: 1:00 p.m. 11:00 p.m.</li>
+          <li>Domingos: Cerrado</li>
+        </ul>
+        <p class="fs-5 fw-bold">Ubicación:</p>
+        <p>Av. Principal de Playa Hermosa, frente al Parque Central, Guanacaste, Costa Rica</p>
+        <p class="fs-5 fw-bold">Teléfonos:</p>
+        <p>+506 7284 1150 / +506 2670 4321</p>
+      </div>
+    </article>
+  <article class="container py-5 p-4 mt-4" id="reserva">
+    <h5 class="fs-2 fw-bold text-center mb-4 letraclara">Reserva ahora</h5>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+        <label for="nombre" class="form-label letraclara"><p>Nombre Completo:</p></label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+      <div class="col-md-6">
+        <label for="telefono" class="form-label letraclara "><p>Número de teléfono:</p></label>
+        <input type="tel" class="form-control" id="telefono">
+      </div>
+      </div>
+      <div class="mb-3">
+      <label for="email" class="form-label letraclara "><p>Correo electrónico (opcional):</p></label>
+      <input type="email" class="form-control" id="email">
+      </div>
+      <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="fecha" class="form-label letraclara "><p>Fecha de la reserva:</p></label>
+        <input type="date" class="form-control" id="fecha">
+      </div>
+      <div class="col-md-6">
+        <label for="hora" class="form-label letraclara "><p>Hora a reservar:</p></label>
+        <input type="time" class="form-control" id="hora">
+      </div>
+      </div>
+      <div class="mb-3">
+      <label for="personas" class="form-label letraclara "><p>Cantidad de personas:</p></label>
+      <input type="number" class="form-control" id="personas" min="1" max="20">
+      </div>
+      <div class="mb-3">
+      <label for="comentarios" class="form-label letraclara "><p>Comentarios adicionales:</p></label>
+      <textarea class="form-control" id="comentarios" rows="3"></textarea>
+      </div>
+      <div class="text-center">
+        <a class="botones" href="#">Enviar reserva </a>
+    </div>
+  </form>
+</article>
+</section>
+
+
+<!--Crear momentos inolvidables-->
+<section class="container-fluid mt-5">
+   <div class="container "> <!--en la pantalla pequeña el contenedor sea de 50% (min-vh-50)-->   
+    <div class="row g-2 min-vh-50 min-vh-md-100 momeninol"><!--cuando la pantalla este de media hacia grande el alto es de 100% ( min-vh-md-100)-->
+      <p class="fs-2 fw-bold text-center usuario" id="eventos">Creando momentos inolvidables</p>
+      <div class="col-12 col-md-6 h-md-100"> <!--al hacer la pantalla pequeña el alto sera de 100% (h-md-100)-->
+      <div class="h-100 overflow-hidden">
+        <img src="imagenexamen/evento1.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="">
+      </div>
+    </div>
+    <div class="col-12 col-md-6 h-md-100 d-flex flex-column gap-2">
+      <div class="overflow-hidden" style="height: 50%;">
+        <img src="imagenexamen/evento2.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="">
+      </div>
+      <div class="overflow-hidden" style="height: 50%;">
+        <img src="imagenexamen/evento3.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+</article>
+<article class="container-fluid">
+    <article class="container p-5">
+      <div class="row contac">
+     <div class="d-flex flex-column d-flex align-items-center p-3  ">
+      <p class="fs-4 fw-bold mx-auto" style="max-width: 600px">Estas listo para planificar tu evento especial</p>
+      <p>Edén donde cada momento se transforma en una memoria refinado e inolvidable.</p>
+      </div>
+      <div class="d-flex flex-md-row justify-content-center align-items-center p-3  ">
+      <a class="botones" href="#reserva">Reserva tu lugar </a>
+      </div>
+      </div>
+      </div>
+    </article>
+</section>
+
+<!--mapa de gppgle-->
+<section class="container-fluid mapa p-5" id="contactanos">
+  <p class="fs-2 fw-bold text-center">Contáctanos, nosotros te ayudamos</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125506.6065290318!2d-85.8244412566406!3d10.572799000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9e2a1b8e6f8003%3A0x88573390debbd4a2!2sPlaya%20Hermosa!5e0!3m2!1ses!2scr!4v1753584528813!5m2!1ses!2scr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<article class="container py-1 my-4">
+  <div class="d-flex flex-md-row flex-wrap gap-4">
+<div class="card mb-3 w-100 d-flex  align-items-center" style="max-width: 540px;">
+  <div class="row g-0 w-100 h-100">
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+      <img src="imagenexamen/mapa (1).png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"><p>Dirección</p></h5>
+        <p class="card-text">Av. Principal de Playa Hermosa, frente al Parque Central, Guanacaste, Costa Rica</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 w-100 d-flex  align-items-center" style="max-width: 540px;">
+  <div class="row g-0 w-100 h-100">
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+      <img src="imagenexamen/llamada.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"><p>Llámanos</p></h5>
+        <p class="card-text">Lunes a Viernes: 12:00 m.d. 10:00 p.m., Sábados: 1:00 p.m. 11:00 p.m., Domingos: Cerrado</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 w-100 d-flex  align-items-center" style="max-width: 540px;">
+  <div class="row g-0 w-100 h-100">
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+      <img src="imagenexamen/gmail.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"><p>Envíanos un correo electrónico</p></h5>
+        <p class="card-text"> reserva@edenrestaurant.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3  w-100 d-flex align-items-center" style="max-width: 540px;">
+  <div class="row g-0 w-100 h-100">
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+      <img src="imagenexamen/evento.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"><p>Horario de apertura</p></h5>
+        <p class="card-text">Lunes a Viernes: 12:00 md  10:00 p.m., Sábados: 1:00 p.m. 11:00 p.m., Domingos: Cerrado</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+</section>
+
+<!--Boton de regreso-->
+<section class=" borde-gradiente">
+    <div class="regresar"><a href="#regresar"><p>Inicio</p></a></div>
+</section>
+
+<!--Pie de pagina-->
+
+    <footer class="textopie text-center p-5 piesito" >
+  <div class="container">
+    <img src="imagenexamen/logo eden.png" alt="Logo" class="mb-3  rounded" style="width: 100px;">
+    <h4 class="mb-3 fw-bold .usuario">Eden Restaurant</h4>
+    <p class="fs-5 mx-auto" style="max-width: 600px;">
+       Donde cada plato cuenta una historia y cada visita se convierte en un recuerdo inolvidable.</p>
+    <div class="mt-4 d-flex justify-content-center gap-4">
+      <a href="https://facebook.com" target="_blank">
+        <img src="imagenexamen/facebook-2429746_640.png" alt="Facebook" style="width: 32px;">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="imagenexamen/instagram-6338401_640.png" alt="Instagram" style="width: 32px;">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="imagenexamen/linked-in-2668696_640.png" alt="LinkedIn" style="width: 32px;">
+      </a>
+      <a href="https://wa.me/50688289750" target="_blank">
+        <img src="imagenexamen/whatsapp-873316_640.png" alt="WhatsApp" style="width: 32px;">
+      </a>
+    </div>
+
+    <!-- derechos reservados -->
+    <p class="mt-4 textopie small">
+      &copy; 2025 Eden Restaurant. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>            
+</body>
+</html>

@@ -1,0 +1,214 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Bentham", serif;
+    color: #401d10; 
+} 
+body
+{
+  background-color: #faebd7;
+}
+
+p
+{
+  font-size: 20px;
+  color: #401d10;
+}  
+h5 ,h4 
+{
+  color: #401d10 !important;
+}
+.usuario
+{
+  color: #401d10 !important;
+}
+a
+{
+  text-decoration: none !important;
+}
+
+/*Bonton hamburguesa*/
+.navbar-toggler .navbar-toggler-icon {                                                                                                 /*color café #401D10*/
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23101d10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.botones
+{
+    border: 4px solid #401d10 !important;
+    border-radius: 15px;
+    color: #401d10 !important;
+    background-color: #fad831 !important;
+    filter: drop-shadow(0 0 5px #401d10);
+    padding: 7px !important;
+   
+}
+.borde-gradiente {
+  width: 70px;
+  height: 50px;
+  border-radius: 25%;
+  background: conic-gradient(#F2E085, #F2A35E,#fde467, #8C3A1C,  #F2A35E,#F2E085);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.regresar {
+  width: 62px;
+  height: 42px;
+  border-radius: 25%;
+  background-color: #401d10;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regresar a
+{
+   text-decoration: none;
+   align-items: bottom !important;   
+}
+.regresar p
+{
+  color:#F2E085 !important;
+  font-size: 20px;
+  margin: 0%;
+}
+.hero
+{
+    background-color: #F2E085;
+}
+
+.quienessomos
+{
+  display: flex !important;
+}
+.contac
+{
+  background-color:#fde467;
+  border: 3px solid #401d10;
+  border-radius: 10px;
+
+}
+.frenterestaurante
+{
+  padding: 20%;
+  animation-name: frenteres;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+.bordes
+{
+  border: 3px solid #8C3A1C !important;
+  border-radius: 10px !important;
+  background-color: rgb(250, 250, 188) !important;
+}
+.bordes p
+{
+  color: #8C3A1C !important;
+}
+.fondocards
+{
+  background-color: #F2E085;
+}
+
+.bordeelegir
+{
+  background-color: #401d10 !important;
+  border: 8px solid !important;
+  border-image:  conic-gradient(#F2E085, #F2A35E,#401d10, #fde467, #8C3A1C,  #F2A35E,#401d10, #8C3A1C, #F2E085)1 !important; 
+}
+.elegirnos
+{
+  color:#F2E085;
+  font-weight: bold; 
+}
+.bord
+{
+  border: 0.01px solid #8c3a1c !important;
+}
+.galeria
+{
+  background-color: #8C3A1C;
+}
+
+.modal-content.colormodal {
+  transition: none !important; /*elimina todas las transiciones que tenga bootstrap*/
+  background-color: #8C3A1C !important;
+}
+/*elimina la linea divisoria entre el encabezado del modal y su contenido, en este caso la foto */
+.modal-content .modal-header {
+  border-bottom: none !important;
+}
+.reservacion
+{
+  background-color: #F2E085;
+}
+#emailHelp
+{
+  color: #401d10;
+}
+.mapa
+{
+   background-color: rgb(250, 250, 188);
+}
+.quedicen
+{
+   background-color: rgb(250, 250, 188);
+}
+.bordequedicen
+{
+  border: 0.01px solid #401d10 !important;
+}
+#reserva
+{
+  background-color: #401d10;
+  border-radius: 25px;
+}
+.letraclara p, h5
+{
+  color: #F2E085 !important;
+}
+.momeninol
+{
+  padding: 7%;
+}
+
+.nav-link:hover
+{
+  font-weight: bold;
+}
+.bordeelegir:hover,
+.bordes:hover{
+
+   transform: translateY(-20px); 
+}
+
+@keyframes frenteres 
+{
+  from {
+    transform: translateX(0); 
+      }
+  to  {
+     transform: translateX(-20px); 
+      }
+}
+a:hover
+{
+    font-weight: bold;
+}
+.botones:hover
+{
+   background: conic-gradient(#F2E085, #F2A35E,#fde467, #d69881,  #F2A35E,#F2E085) !important;  
+}
+
+@media (width<= 780px)
+ {
+ .quienessomos .somos
+ {
+   width: 100%;
+  }
+  
+ }
